@@ -15,7 +15,7 @@ and references each plugin via a git source.
 ## Install
 
 ```text
-/plugin marketplace add eserlxl/marketplace
+/plugin marketplace add eserlxl/claude-marketplace
 /plugin install qb@eserlxl
 /plugin install planwright@eserlxl
 ```
