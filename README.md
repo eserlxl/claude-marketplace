@@ -1,4 +1,4 @@
-# eserlxl marketplace
+# Eser KUBALI's Claude Code plugin marketplace
 
 A [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/plugin-marketplaces)
 that aggregates Eser KUBALI's plugins. The plugins themselves live in their own
