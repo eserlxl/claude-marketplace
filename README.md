@@ -1,7 +1,7 @@
-# Eser KUBALI's Claude Code plugin marketplace
+# Claude Code plugin marketplace
 
 A [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/plugin-marketplaces)
-that aggregates Eser KUBALI's plugins. The plugins themselves live in their own
+that aggregates plugins. The plugins themselves live in their own
 repositories; this repo only ships the catalog (`.claude-plugin/marketplace.json`)
 and references each plugin via a git source.
 
