@@ -22,12 +22,12 @@ and references each plugin via a git source.
 
 ## Why a dedicated marketplace repo?
 
-`eserlxl/qb` and `eserlxl/planwright` are plugin repositories. Earlier, each one
-*also* declared its own marketplace named `eserlxl`, so adding both as
-marketplaces made the second overwrite the first (a marketplace is keyed by its
+Individual plugin repositories (like `qb` or `planwright`) may declare their own
+marketplace named `eserlxl`. Adding multiple such repositories as marketplaces
+makes the later ones overwrite the previous ones (a marketplace is keyed by its
 `name`, not by the repo it came from). This repo is the single canonical
-`eserlxl` marketplace; add **only this repo** and it offers every plugin.
+`eserlxl` marketplace; add **only this repo** and it offers every plugin in the catalog.
 
-> Do not run `/plugin marketplace add eserlxl/qb` or `eserlxl/planwright` as
-> marketplaces — those repos still declare an `eserlxl` marketplace internally
-> and would clobber this aggregator's registration.
+> Do not run `/plugin marketplace add` for individual plugin repositories as
+> marketplaces — if those repos declare an `eserlxl` marketplace internally,
+> they would clobber this aggregator's registration.
