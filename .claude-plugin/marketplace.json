@@ -1,0 +1,31 @@
+{
+  "name": "eserlxl",
+  "owner": {
+    "name": "Eser KUBALI"
+  },
+  "metadata": {
+    "description": "Eser KUBALI's Claude Code plugin marketplace: grounded, repo-aware planning and audit/hardening tools.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "qb",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/eserlxl/qb.git",
+        "path": "platforms/claude-code",
+        "ref": "main"
+      },
+      "description": "Repo-aware, gated, multi-step project planning workflow for Claude Code: master plan, autopsy, phase decomposition, coverage/quality audit, and gated implementation. Produces English Planner-docs/; in-session and zero-setup."
+    },
+    {
+      "name": "planwright",
+      "source": {
+        "source": "github",
+        "repo": "eserlxl/planwright",
+        "ref": "main"
+      },
+      "description": "Grounded codebase planning for AI coding agents, packaged for Claude Code: audits your repository and writes a verification-ready checkbox plan where every step is checkable."
+    }
+  ]
+}
