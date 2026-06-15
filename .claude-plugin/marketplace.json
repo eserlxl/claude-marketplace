@@ -21,8 +21,8 @@
     {
       "name": "planwright",
       "source": {
-        "source": "github",
-        "repo": "eserlxl/planwright",
+        "source": "url",
+        "url": "https://github.com/eserlxl/planwright.git",
         "ref": "main"
       },
       "description": "Grounded codebase planning for AI coding agents, packaged for Claude Code: audits your repository and writes a verification-ready checkbox plan where every step is checkable."
