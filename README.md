@@ -9,7 +9,7 @@ and references each plugin via a git source.
 
 | Plugin | Source repo | What it does |
 |--------|-------------|--------------|
-| `qb` | [`eserlxl/qb`](https://github.com/eserlxl/qb) (`platforms/claude-code`) | Repo-aware, gated, multi-step project planning workflow for Claude Code: master plan, autopsy, phase decomposition, coverage/quality audit, and gated implementation. Produces English Planner-docs/; in-session and zero-setup. |
+| `qb` | [`eserlxl/qb`](https://github.com/eserlxl/qb) | Repo-aware, gated, multi-step project planning workflow for Claude Code: master plan, autopsy, phase decomposition, coverage/quality audit, and gated implementation. Produces English Planner-docs/; in-session and zero-setup. |
 | `planwright` | [`eserlxl/planwright`](https://github.com/eserlxl/planwright) | Grounded codebase planning for AI coding agents, packaged for Claude Code: audits your repository and writes a verification-ready checkbox plan where every step is checkable. |
 
 ## Install
