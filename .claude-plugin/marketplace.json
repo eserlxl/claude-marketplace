@@ -26,6 +26,15 @@
         "ref": "main"
       },
       "description": "Grounded codebase planning for AI coding agents, packaged for Claude Code: audits your repository and writes a verification-ready checkbox plan where every step is checkable."
+    },
+    {
+      "name": "external-agents",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/eserlxl/external-agents.git",
+        "ref": "main"
+      },
+      "description": "Run external coding-agent CLIs (agy, codex, optionally claude) as autonomous sub-agents from inside Claude Code. Dispatch one prompt to a single agent or fan it out to all in parallel, read-write by default (--read-only available), and collect every response inline."
     }
   ]
 }

@@ -13,6 +13,7 @@ plugin through its git source.
 |--------|-------------|-------------|
 | `qb` | `eserlxl/qb` | Repo-aware, gated, multi-step planning workflow for Claude Code. It creates a master plan, autopsy, phase decomposition, coverage/quality audit, and gated implementation flow. Outputs English Planner-docs/ files and works in-session with zero setup. |
 | `planwright` | `eserlxl/planwright` | Grounded codebase planning for AI coding agents, packaged for Claude Code. It audits your repository and writes a verification-ready checkbox plan where every step is concrete and checkable. |
+| `external-agents` | `eserlxl/external-agents` | Run external coding-agent CLIs — `agy`, `codex`, optionally `claude` — as autonomous sub-agents from inside Claude Code. Dispatch a task to one agent or fan one prompt out to all in parallel and collect every response inline; read-write by default, with a `--read-only` mode available. |
 
 ## Install
 
@@ -27,6 +28,7 @@ Then install any plugin from the catalog:
 ```text
 /plugin install qb@eserlxl
 /plugin install planwright@eserlxl
+/plugin install external-agents@eserlxl
 ```
 
 ## Why this marketplace exists
