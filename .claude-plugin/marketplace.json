@@ -4,7 +4,7 @@
     "name": "Eser KUBALI"
   },
   "metadata": {
-    "description": "Eser KUBALI's Claude Code plugin marketplace: grounded, repo-aware planning and audit/hardening tools.",
+    "description": "Eser KUBALI's Claude Code plugin marketplace: grounded, repo-aware planning, audit/hardening, and agent delegation and orchestration tools for Claude Code.",
     "version": "0.1.0"
   },
   "plugins": [
