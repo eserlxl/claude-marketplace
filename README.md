@@ -78,4 +78,15 @@ Do not run `/plugin marketplace add` for individual plugin repositories such as
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+The MIT license in [LICENSE](LICENSE) covers **only this catalog repository** — its
+`marketplace.json`, this README, and the validation tooling here. It does not cover the
+plugins themselves.
+
+Each plugin ships from its own repository under its own license, and they are not
+uniformly MIT:
+
+- [`qb`](https://github.com/eserlxl/qb) — MIT
+- [`planwright`](https://github.com/eserlxl/planwright) — GNU GPL v3.0 or later
+- [`external-agents`](https://github.com/eserlxl/external-agents) — GNU GPL v3.0 or later
+
+Check each plugin's repository for the authoritative terms.
