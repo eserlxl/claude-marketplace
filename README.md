@@ -3,9 +3,10 @@
 This repository is the canonical eserlxl plugin marketplace for
 Claude Code plugins.
 
-It is a catalog-only repository. The plugins live in their own repositories;
-this repo only ships `.claude-plugin/marketplace.json` and references each
-plugin through its git source.
+It is a catalog repository: no plugin source lives here. The plugins live in
+their own repositories and are referenced through their git source. Alongside the
+catalog (`.claude-plugin/marketplace.json`) it ships only the light tooling that
+keeps the catalog valid (see [Validating the marketplace](#validating-the-marketplace)).
 
 ## Plugins
 
@@ -33,9 +34,8 @@ Then install any plugin from the catalog:
 
 ## Validating the marketplace
 
-This repository stays catalog-only — the only thing it ships is a valid
-`.claude-plugin/marketplace.json`. Before pushing a catalog change, validate it with
-Claude Code:
+The catalog must stay a valid `.claude-plugin/marketplace.json`. Before pushing a
+catalog change, validate it with Claude Code:
 
 ```text
 claude plugin validate .
@@ -75,3 +75,7 @@ Add only this repository as the marketplace:
 Do not run `/plugin marketplace add` for individual plugin repositories such as
 `eserlxl/qb` or `eserlxl/planwright`. If those repositories declare an internal
 `eserlxl` marketplace, they may clobber this aggregator registration.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
