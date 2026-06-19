@@ -11,3 +11,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate marketplace manifest
         run: python3 scripts/validate-marketplace.py
+      - name: Test the validator
+        run: python3 scripts/test-validate-marketplace.py
