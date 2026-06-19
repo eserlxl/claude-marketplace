@@ -31,6 +31,27 @@ Then install any plugin from the catalog:
 /plugin install external-agents@eserlxl
 ```
 
+## Validating the marketplace
+
+This repository stays catalog-only — the only thing it ships is a valid
+`.claude-plugin/marketplace.json`. Before pushing a catalog change, validate it with
+Claude Code:
+
+```text
+claude plugin validate .
+```
+
+A self-contained check (no Claude Code required) also runs in CI on every push and
+pull request, and can be run locally:
+
+```text
+python3 scripts/validate-marketplace.py
+```
+
+It confirms the manifest is valid JSON, every plugin entry has a well-formed name,
+description, and source, there are no duplicate plugin names, and the plugin list stays
+in sync with the table and install commands in this README.
+
 ## Why this marketplace exists
 
 Claude Code marketplaces are keyed by marketplace name, not by the repository
